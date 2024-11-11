@@ -12,6 +12,8 @@ import './styles/tailwind.css'; // Tailwind styles
 import MainPage from './components/MainPage';
 import Help from './components/Help.jsx';
 import ExplorePage from './components/ExplorePage'; // Import ExplorePage
+import Privacy from './components/Privacy'; // Import Privacy Policy Page
+import './index.css'; // Import css for Privacy Policy and ContactUS Page
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/main-page" element={<MainPage />} /> {/* Updated to lowercase for consistency */}
         <Route path="/help" element={<Help />} />
         <Route path="/explore" element={<ExplorePage />} /> {/* Changed path to /explore */}
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </Router>
   );
